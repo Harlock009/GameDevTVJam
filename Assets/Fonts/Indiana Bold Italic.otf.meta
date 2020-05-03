@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 1a545478652c00c4d93019cc2b93cb0d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Indiana
+  fontNames:
+  - Indiana
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 25e2b2c46244dbd4b8aa0a1758a841b8, type: 3}
+  - {fileID: 12800000, guid: 25d20f08e6b21144e9cdadb47c1cd9bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
