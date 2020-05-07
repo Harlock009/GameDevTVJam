@@ -44,6 +44,10 @@ public class Player : MonoBehaviour
     void Update()
     {
         Interact();
+    }
+
+    private void FixedUpdate()
+    {
         Move();
     }
 
@@ -95,18 +99,21 @@ public class Player : MonoBehaviour
 
         if (horizontal != 0)
         {
-            playerRigidBody.MovePosition(new Vector2(transform.position.x + (horizontal * speed * Time.deltaTime), transform.position.y));
+            playerRigidBody.velocity = new Vector2(horizontal * speed, 0f);
             moving = true;
             lastMove = new Vector2(horizontal, 0f);
         }
         else if (vertical != 0)
         {
-            playerRigidBody.MovePosition(new Vector2(transform.position.x, transform.position.y + (vertical * speed * Time.deltaTime)));
+            playerRigidBody.velocity = new Vector2(0f, vertical * speed);
             moving = true;
             lastMove = new Vector2(0f, vertical);
         }
         else
+        {
+            playerRigidBody.velocity = Vector2.zero;
             moving = false;
+        }
 
         playerAnimator.SetFloat("Horizontal", horizontal);
         playerAnimator.SetFloat("Vertical", vertical);
