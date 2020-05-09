@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pedestal : Interactable
 {
-    [SerializeField] GameObject crystalOrb;
-    [SerializeField] AudioClip door;
+    [SerializeField] private GameObject crystalOrb;
+    [SerializeField] private AudioClip door;
     private bool hasOrb;
 
     public override void Interact(Player player)
