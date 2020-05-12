@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartGame.unity
     guid: 7d23cc5b9681eab4088ac87478bbcf67
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene_NaNstr.unity
     guid: e2cdb5ec60eb9754a88be89d49b09be3
+  - enabled: 1
+    path: Assets/Scenes/TestScene_Critter.unity
+    guid: 1a4a7d8c1c5eddb46b90580c05b0c55c
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 8bf73836b3d6efe46a1110fb04dbc7b4
