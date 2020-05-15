@@ -32,14 +32,14 @@ public class GameSession : MonoBehaviour
 
         if(minutes == 0 && seconds == 0 && milliseconds == 0)
         {
-            Invoke("LoadNextScenes", 1f);
+            Invoke("LoadNextScenes",0f);
         }
         if (seconds == 60)
         {
             seconds = 0;
         }
 
-        timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("00");
+        timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");// + ":" + milliseconds.ToString("00");
     }
 
     private void LoadNextScenes()
