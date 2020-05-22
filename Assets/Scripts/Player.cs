@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Vector2 lastMove;
 
     // Items and interactables
-    Interactable interactableInRange;
+    [SerializeField] Interactable interactableInRange;
     public List<ItemData> items;
 
     // New EventArgs to pass in arguments
@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
         {
             playerRigidBody.velocity = new Vector2(0f, vertical * speed);
             moving = true;
-            lastMove = new Vector2(0f, vertical);
+            //lastMove = new Vector2(0f, vertical);
         }
         else
         {

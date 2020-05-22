@@ -1,0 +1,1244 @@
+fileFormatVersion: 2
+guid: 44dc935c5a113a248b5344f97eb6dfbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -381215096762155601
+    second: YeOldySkelitonGuy_0
+  - first:
+      213: 703431886995172410
+    second: YeOldySkelitonGuy_1
+  - first:
+      213: 5141590735211119060
+    second: YeOldySkelitonGuy_2
+  - first:
+      213: 4119623172853779762
+    second: YeOldySkelitonGuy_3
+  - first:
+      213: -3115839783053178903
+    second: YeOldySkelitonGuy_4
+  - first:
+      213: 8236260422017513750
+    second: YeOldySkelitonGuy_5
+  - first:
+      213: 1636192791925503593
+    second: YeOldySkelitonGuy_6
+  - first:
+      213: -3047518506260442458
+    second: YeOldySkelitonGuy_7
+  - first:
+      213: -1792642122352767387
+    second: YeOldySkelitonGuy_8
+  - first:
+      213: -5182226126431025009
+    second: YeOldySkelitonGuy_9
+  - first:
+      213: -9068980405900680940
+    second: YeOldySkelitonGuy_10
+  - first:
+      213: 8801402063419151947
+    second: YeOldySkelitonGuy_11
+  - first:
+      213: -2031036611264714870
+    second: YeOldySkelitonGuy_12
+  - first:
+      213: 7781708009276602772
+    second: YeOldySkelitonGuy_13
+  - first:
+      213: -1422819449651317624
+    second: YeOldySkelitonGuy_14
+  - first:
+      213: -3203605858241454446
+    second: YeOldySkelitonGuy_15
+  - first:
+      213: 5636596204507342935
+    second: YeOldySkelitonGuy_16
+  - first:
+      213: 3679052138581725835
+    second: YeOldySkelitonGuy_17
+  - first:
+      213: 7413111547346995411
+    second: YeOldySkelitonGuy_18
+  - first:
+      213: -5396673451515986065
+    second: YeOldySkelitonGuy_19
+  - first:
+      213: 5908754591734819084
+    second: YeOldySkelitonGuy_20
+  - first:
+      213: 7717637836360251186
+    second: YeOldySkelitonGuy_21
+  - first:
+      213: -2448081921814012092
+    second: YeOldySkelitonGuy_22
+  - first:
+      213: 3096173600042851535
+    second: YeOldySkelitonGuy_23
+  - first:
+      213: 8926540704289501795
+    second: YeOldySkelitonGuy_24
+  - first:
+      213: 8270631056639116664
+    second: YeOldySkelitonGuy_25
+  - first:
+      213: 362374513593355095
+    second: YeOldySkelitonGuy_26
+  - first:
+      213: -5571054253298119425
+    second: YeOldySkelitonGuy_27
+  - first:
+      213: -6798204703448160766
+    second: YeOldySkelitonGuy_28
+  - first:
+      213: 1157213550005795351
+    second: YeOldySkelitonGuy_29
+  - first:
+      213: -2084702255977096527
+    second: YeOldySkelitonGuy_30
+  - first:
+      213: 2484776516537852110
+    second: YeOldySkelitonGuy_31
+  - first:
+      213: -8935935554180316127
+    second: YeOldySkelitonGuy_32
+  - first:
+      213: -9023843315372780012
+    second: YeOldySkelitonGuy_33
+  - first:
+      213: -3212004401397014368
+    second: YeOldySkelitonGuy_34
+  - first:
+      213: 1522582452763718917
+    second: YeOldySkelitonGuy_35
+  - first:
+      213: -2832025981393137845
+    second: YeOldySkelitonGuy_36
+  - first:
+      213: 3657937734944492360
+    second: YeOldySkelitonGuy_37
+  - first:
+      213: -7112756245948499939
+    second: YeOldySkelitonGuy_38
+  - first:
+      213: -5153205829130406668
+    second: YeOldySkelitonGuy_39
+  - first:
+      213: 5368139395744872059
+    second: YeOldySkelitonGuy_40
+  - first:
+      213: 1794749983799129382
+    second: YeOldySkelitonGuy_41
+  - first:
+      213: -5539482366932765563
+    second: YeOldySkelitonGuy_42
+  - first:
+      213: -5443434404543363370
+    second: YeOldySkelitonGuy_43
+  - first:
+      213: 6270010684717370690
+    second: YeOldySkelitonGuy_44
+  - first:
+      213: -6077905063448445676
+    second: YeOldySkelitonGuy_45
+  - first:
+      213: -9168411700077708440
+    second: YeOldySkelitonGuy_46
+  - first:
+      213: 8872371161382948212
+    second: YeOldySkelitonGuy_47
+  - first:
+      213: -1997758439607958251
+    second: YeOldySkelitonGuy_48
+  - first:
+      213: 862681880451200872
+    second: YeOldySkelitonGuy_49
+  - first:
+      213: -4435375287418651671
+    second: YeOldySkelitonGuy_50
+  - first:
+      213: 6640504521696855006
+    second: YeOldySkelitonGuy_51
+  - first:
+      213: 560260942856933501
+    second: YeOldySkelitonGuy_52
+  - first:
+      213: 574543670641866753
+    second: YeOldySkelitonGuy_53
+  - first:
+      213: 7584002809183759800
+    second: YeOldySkelitonGuy_54
+  - first:
+      213: 3891874913623506646
+    second: YeOldySkelitonGuy_55
+  - first:
+      213: 8074360485230955489
+    second: YeOldySkelitonGuy_56
+  - first:
+      213: -2732687180489842141
+    second: YeOldySkelitonGuy_57
+  - first:
+      213: 5824205254989926019
+    second: YeOldySkelitonGuy_58
+  - first:
+      213: -2994691045601931606
+    second: YeOldySkelitonGuy_59
+  - first:
+      213: 8074910729986097557
+    second: YeOldySkelitonGuy_60
+  - first:
+      213: 7261754143573873570
+    second: YeOldySkelitonGuy_61
+  - first:
+      213: 1956465044384984990
+    second: YeOldySkelitonGuy_62
+  - first:
+      213: -6412486585130992928
+    second: YeOldySkelitonGuy_0
+  - first:
+      213: 7206813929682893196
+    second: YeOldySkelitonGuy_1
+  - first:
+      213: -1839818028318822324
+    second: YeOldySkelitonGuy_2
+  - first:
+      213: -1858133945989580152
+    second: YeOldySkelitonGuy_3
+  - first:
+      213: 2604765220835158267
+    second: YeOldySkelitonGuy_4
+  - first:
+      213: 5888564321815400064
+    second: YeOldySkelitonGuy_5
+  - first:
+      213: 3618856502212433890
+    second: YeOldySkelitonGuy_6
+  - first:
+      213: -5746542515455904062
+    second: YeOldySkelitonGuy_7
+  - first:
+      213: 895138989910836515
+    second: YeOldySkelitonGuy_8
+  - first:
+      213: -8364316588861810401
+    second: YeOldySkelitonGuy_9
+  - first:
+      213: -7899279267646579325
+    second: YeOldySkelitonGuy_10
+  - first:
+      213: 6993836750178781958
+    second: YeOldySkelitonGuy_11
+  - first:
+      213: -7091469156026668477
+    second: YeOldySkelitonGuy_12
+  - first:
+      213: 8353520806554436444
+    second: YeOldySkelitonGuy_13
+  - first:
+      213: -5521778844203435093
+    second: YeOldySkelitonGuy_14
+  - first:
+      213: -5138375626121489523
+    second: YeOldySkelitonGuy_15
+  - first:
+      213: 435041306653424320
+    second: YeOldySkelitonGuy_16
+  - first:
+      213: -2426489692851307438
+    second: YeOldySkelitonGuy_17
+  - first:
+      213: -1904604689796830478
+    second: YeOldySkelitonGuy_18
+  - first:
+      213: 7610334562230952825
+    second: YeOldySkelitonGuy_19
+  - first:
+      213: -1815313178844837930
+    second: YeOldySkelitonGuy_20
+  - first:
+      213: 5404359383059939737
+    second: YeOldySkelitonGuy_21
+  - first:
+      213: 5036947147657191067
+    second: YeOldySkelitonGuy_22
+  - first:
+      213: -4302596410567467197
+    second: YeOldySkelitonGuy_23
+  - first:
+      213: 157261761697684999
+    second: YeOldySkelitonGuy_24
+  - first:
+      213: -7078868313585680227
+    second: YeOldySkelitonGuy_25
+  - first:
+      213: 1675731969477954501
+    second: YeOldySkelitonGuy_26
+  - first:
+      213: -8104165253120997009
+    second: YeOldySkelitonGuy_27
+  - first:
+      213: -9106196613635492854
+    second: YeOldySkelitonGuy_28
+  - first:
+      213: 5386441894934340139
+    second: YeOldySkelitonGuy_29
+  - first:
+      213: -3556160585826432693
+    second: YeOldySkelitonGuy_30
+  - first:
+      213: -4844649673067310466
+    second: YeOldySkelitonGuy_31
+  - first:
+      213: 5156169813256043980
+    second: YeOldySkelitonGuy_32
+  - first:
+      213: 1775992617880178449
+    second: YeOldySkelitonGuy_33
+  - first:
+      213: -2198806210633205345
+    second: YeOldySkelitonGuy_34
+  - first:
+      213: -1070199304428046210
+    second: YeOldySkelitonGuy_35
+  - first:
+      213: 3264689308564604358
+    second: YeOldySkelitonGuy_36
+  - first:
+      213: 3911339465202570120
+    second: YeOldySkelitonGuy_37
+  - first:
+      213: -2660091576802915748
+    second: YeOldySkelitonGuy2_0
+  - first:
+      213: -7155456790562379839
+    second: YeOldySkelitonGuy2_1
+  - first:
+      213: -8277595931303415060
+    second: YeOldySkelitonGuy2_2
+  - first:
+      213: -1250428863003340737
+    second: YeOldySkelitonGuy2_3
+  - first:
+      213: 6926876600718282181
+    second: YeOldySkelitonGuy2_4
+  - first:
+      213: 8101940525194532406
+    second: YeOldySkelitonGuy2_5
+  - first:
+      213: -4460034820906872152
+    second: YeOldySkelitonGuy2_6
+  - first:
+      213: -520285399596858410
+    second: YeOldySkelitonGuy2_7
+  - first:
+      213: -9189988311851293716
+    second: YeOldySkelitonGuy2_8
+  - first:
+      213: 7728882415385921232
+    second: YeOldySkelitonGuy2_9
+  - first:
+      213: 2577680357561252244
+    second: YeOldySkelitonGuy2_10
+  - first:
+      213: 4507567412199788901
+    second: YeOldySkelitonGuy2_11
+  - first:
+      213: 4485444854023887019
+    second: YeOldySkelitonGuy2_12
+  - first:
+      213: -7153766603868698488
+    second: YeOldySkelitonGuy2_13
+  - first:
+      213: 2168054445563144700
+    second: YeOldySkelitonGuy2_14
+  - first:
+      213: -6419070755188731348
+    second: YeOldySkelitonGuy2_15
+  - first:
+      213: -1042672202126325935
+    second: YeOldySkelitonGuy2_16
+  - first:
+      213: 113862849231471433
+    second: YeOldySkelitonGuy2_17
+  - first:
+      213: -4252472138950293123
+    second: YeOldySkelitonGuy2_18
+  - first:
+      213: -8621459228249509368
+    second: YeOldySkelitonGuy2_19
+  - first:
+      213: -6259603626433516413
+    second: YeOldySkelitonGuy2_20
+  - first:
+      213: -3631110130394210395
+    second: YeOldySkelitonGuy2_21
+  - first:
+      213: -8818840666748066822
+    second: YeOldySkelitonGuy2_22
+  - first:
+      213: -3758674870045825523
+    second: YeOldySkelitonGuy2_23
+  - first:
+      213: 7546869243982009589
+    second: YeOldySkelitonGuy2_24
+  - first:
+      213: 7874329720461884266
+    second: YeOldySkelitonGuy2_25
+  - first:
+      213: 3144770374780000318
+    second: YeOldySkelitonGuy2_26
+  - first:
+      213: -7857538274290772655
+    second: YeOldySkelitonGuy2_27
+  - first:
+      213: 2642473142022830040
+    second: YeOldySkelitonGuy2_28
+  - first:
+      213: 8501386510954019949
+    second: YeOldySkelitonGuy2_29
+  - first:
+      213: -8405299043522936667
+    second: YeOldySkelitonGuy2_30
+  - first:
+      213: -3924962993539951384
+    second: YeOldySkelitonGuy2_0
+  - first:
+      213: 3710228069556103698
+    second: YeOldySkelitonGuy2_1
+  - first:
+      213: -7990213739836020540
+    second: YeOldySkelitonGuy2_2
+  - first:
+      213: 533995041529383547
+    second: YeOldySkelitonGuy2_3
+  - first:
+      213: -8748800414811479218
+    second: YeOldySkelitonGuy2_4
+  - first:
+      213: 6666283540208265480
+    second: YeOldySkelitonGuy2_5
+  - first:
+      213: 8611486182103689233
+    second: YeOldySkelitonGuy2_6
+  - first:
+      213: 2437928285610591407
+    second: YeOldySkelitonGuy2_7
+  - first:
+      213: 6217719345850016527
+    second: YeOldySkelitonGuy2_8
+  - first:
+      213: -33404214709214924
+    second: YeOldySkelitonGuy2_9
+  - first:
+      213: 9008617838596685443
+    second: YeOldySkelitonGuy2_10
+  - first:
+      213: 5135115839489290038
+    second: YeOldySkelitonGuy2_11
+  - first:
+      213: -1304652108709834775
+    second: YeOldySkelitonGuy2_12
+  - first:
+      213: -7204080243366814600
+    second: YeOldySkelitonGuy2_13
+  - first:
+      213: 2811782652330139746
+    second: YeOldySkelitonGuy2_14
+  - first:
+      213: -3322420947863044992
+    second: YeOldySkelitonGuy2_15
+  - first:
+      213: 7438113313030395513
+    second: YeOldySkelitonGuy2_16
+  - first:
+      213: 3243634645103633409
+    second: YeOldySkelitonGuy2_17
+  - first:
+      213: 7137099553802004660
+    second: YeOldySkelitonGuy2_18
+  - first:
+      213: -8155887923217088193
+    second: YeOldySkelitonGuy2_19
+  - first:
+      213: 2537520914749041893
+    second: YeOldySkelitonGuy2_20
+  - first:
+      213: -317246808133861091
+    second: YeOldySkelitonGuy2_21
+  - first:
+      213: 3141833042504683988
+    second: YeOldySkelitonGuy2_22
+  - first:
+      213: 5901202680517335017
+    second: YeOldySkelitonGuy2_23
+  - first:
+      213: -6440737324506641443
+    second: YeOldySkelitonGuy2_24
+  - first:
+      213: -1442090974183715526
+    second: YeOldySkelitonGuy2_25
+  - first:
+      213: -3348563718127689731
+    second: YeOldySkelitonGuy2_26
+  - first:
+      213: -1962895025897091978
+    second: YeOldySkelitonGuy2_27
+  - first:
+      213: 7597484161811736816
+    second: YeOldySkelitonGuy2_28
+  - first:
+      213: -2174724350166596616
+    second: YeOldySkelitonGuy2_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 93
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e45f75e3fab789c0800000000000000
+      internalID: -3924962993539951384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 93
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a239985c06d7330800000000000000
+      internalID: 3710228069556103698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 93
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8e0a500fe0d1190800000000000000
+      internalID: -7990213739836020540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 93
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7acd2a39a1296700800000000000000
+      internalID: 533995041529383547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 93
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e432f583064069680800000000000000
+      internalID: -8748800414811479218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809a5227f85638c50800000000000000
+      internalID: 6666283540208265480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118a9789e05228770800000000000000
+      internalID: 8611486182103689233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa442bbebd245d120800000000000000
+      internalID: 2437928285610591407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03e67a5dc6c94650800000000000000
+      internalID: 6217719345850016527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431a1403b03598ff0800000000000000
+      internalID: -33404214709214924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e7dcac13a050d70800000000000000
+      internalID: 9008617838596685443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 71
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fad3526a8934740800000000000000
+      internalID: 5135115839489290038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 49
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc2e8c1d1f4ede0800000000000000
+      internalID: -1304652108709834775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 49
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c16b00037f50c90800000000000000
+      internalID: -7204080243366814600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2606eb1cc65750720800000000000000
+      internalID: 2811782652330139746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_15
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 49
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c7e4830c364e1d0800000000000000
+      internalID: -3322420947863044992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 49
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976d74e36ac793760800000000000000
+      internalID: 7438113313030395513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_17
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 27
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1046d823684b30d20800000000000000
+      internalID: 3243634645103633409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 27
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8a7feea321c0360800000000000000
+      internalID: 7137099553802004660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 27
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f314fb4452770de80800000000000000
+      internalID: -8155887923217088193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 27
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecadbdd3d5173320800000000000000
+      internalID: 2537520914749041893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 27
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d110e0775b9e89bf0800000000000000
+      internalID: -317246808133861091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 27
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1931a81880a9b20800000000000000
+      internalID: 3141833042504683988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_23
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e791df629845e150800000000000000
+      internalID: 5901202680517335017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_24
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb8e212787ed96a0800000000000000
+      internalID: -6440737324506641443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d8bf546e9acfbe0800000000000000
+      internalID: -1442090974183715526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffdc313a038781d0800000000000000
+      internalID: -3348563718127689731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cc502bf5562c4e0800000000000000
+      internalID: -1962895025897091978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8e17b879faf6960800000000000000
+      internalID: 7597484161811736816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YeOldySkelitonGuy2_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f38de7c9b3d1d1e0800000000000000
+      internalID: -2174724350166596616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

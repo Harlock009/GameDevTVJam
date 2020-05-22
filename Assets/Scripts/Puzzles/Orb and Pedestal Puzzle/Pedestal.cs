@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pedestal : Interactable
 {
-    [SerializeField] private GameObject crystalOrb;
+    [SerializeField] private Sprite pedestalWithOrb;
     [SerializeField] private AudioClip door;
     private bool hasOrb;
 
@@ -19,8 +19,7 @@ public class Pedestal : Interactable
             {
                 if (player.items[itemIdx].itemUI.tag == "Orb")
                 {
-                    GameObject orb = Instantiate(crystalOrb, transform.position, Quaternion.identity, transform) as GameObject;
-                    Destroy(orb.GetComponent<CircleCollider2D>());
+                    GetComponent<SpriteRenderer>().sprite = pedestalWithOrb;
                     //TODO: Door opens
                     AudioSource.PlayClipAtPoint(door, Camera.main.transform.position, 0.5f);
                     hasOrb = true;

@@ -9,24 +9,8 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7c6b5c427207d06438d74ba45574259f, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Horizontal
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 03ead6b6e24e44e439e8413c2e7b0e53, type: 2}
-    m_Threshold: 0.33333334
-    m_Position: {x: 0, y: -1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Horizontal
-    m_Mirror: 0
-  - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: fe7257cbe93cd164fb274de9bbb653bb, type: 2}
-    m_Threshold: 0.6666667
+    m_Threshold: 0.6666666
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -42,11 +26,11 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: LastMoveHorizontal
   m_BlendParameterY: LastMoveVertical
-  m_MinThreshold: 0
+  m_MinThreshold: 0.6666666
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 1
+  m_BlendType: 0
 --- !u!206 &-5639464944921127588
 BlendTree:
   m_ObjectHideFlags: 1
@@ -55,22 +39,6 @@ BlendTree:
   m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
   m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e45fddda5aa97ea45accf742b968d268, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d1ba114af941b994b80f7b0ca679de78, type: 2}
-    m_Threshold: 0.14285715
-    m_Position: {x: 0, y: -1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
-    m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 1a660dbb24a9f6943a8d289827151950, type: 2}
     m_Threshold: 0.2857143
@@ -81,51 +49,19 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7bea19cc39742f840b241ca8d76b0066, type: 2}
-    m_Threshold: 0.42857143
+    m_Threshold: 0.6428572
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7bea19cc39742f840b241ca8d76b0066, type: 2}
-    m_Threshold: 0.5714286
-    m_Position: {x: 1, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Horizontal
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7bea19cc39742f840b241ca8d76b0066, type: 2}
-    m_Threshold: 0.71428573
-    m_Position: {x: 1, y: -1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Horizontal
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1a660dbb24a9f6943a8d289827151950, type: 2}
-    m_Threshold: 0.85714287
-    m_Position: {x: -1, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Horizontal
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1a660dbb24a9f6943a8d289827151950, type: 2}
-    m_Threshold: 1
-    m_Position: {x: -1, y: -1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Horizontal
-    m_Mirror: 0
-  m_BlendParameter: Horizontal
-  m_BlendParameterY: Vertical
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
+  m_BlendParameter: LastMoveHorizontal
+  m_BlendParameterY: LastMoveVertical
+  m_MinThreshold: 0.2857143
+  m_MaxThreshold: 0.6428572
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 1
+  m_BlendType: 0
 --- !u!1101 &-3349363662653657012
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -215,31 +151,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Vertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: LastMoveHorizontal
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: LastMoveVertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Walking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
