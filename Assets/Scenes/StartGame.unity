@@ -384,6 +384,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Credits Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 9027765646778219423, guid: cb185a3c5a547bd498961e7edb38459f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb185a3c5a547bd498961e7edb38459f, type: 3}
 --- !u!1 &1095645390 stripped
