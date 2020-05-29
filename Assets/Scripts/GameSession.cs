@@ -19,7 +19,7 @@ public class GameSession : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Timer();
+        Invoke("Timer", 2f);
     }
 
     private void Timer()
@@ -33,6 +33,10 @@ public class GameSession : MonoBehaviour
         if(minutes == 0 && seconds == 0 && milliseconds == 0)
         {
             Invoke("LoadNextScenes",0f);
+        }
+        else if(minutes < 0 && seconds < 0)
+        {
+            Destroy(gameObject);
         }
         if (seconds == 60)
         {

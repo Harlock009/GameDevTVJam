@@ -109,7 +109,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2142664559217851893}
   - component: {fileID: 2142664559217851892}
-  - component: {fileID: 4444380947938480844}
   - component: {fileID: 4626658616215250153}
   m_Layer: 0
   m_Name: GameSession
@@ -148,18 +147,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeInMinutes: 1
   timerText: {fileID: 1462508390484692436}
---- !u!114 &4444380947938480844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142664559217851895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1055c7065a6ffff40b7bd18241be6012, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &4626658616215250153
 AudioSource:
   m_ObjectHideFlags: 0
