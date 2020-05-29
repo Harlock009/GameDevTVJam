@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -9157506593263023728}
   - component: {fileID: 5107951593296710552}
   - component: {fileID: 8309064063329808340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 524921787
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2660091576802915748, guid: 44dc935c5a113a248b5344f97eb6dfbc,
     type: 3}
@@ -139,8 +139,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.024176687, y: -0.031615615}
-  m_Size: {x: 0.2888415, y: 0.48676878}
+  m_Offset: {x: 0.047393292, y: -0.0641188}
+  m_Size: {x: 0.46157306, y: 1.001249}
   m_Direction: 0
 --- !u!114 &8309064063329808340
 MonoBehaviour:
@@ -156,4 +156,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   lastMove: {x: 0, y: 0}
+  interactableInRange: {fileID: 0}
   items: []

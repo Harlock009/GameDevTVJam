@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class WiseMonkeysClue : MonoBehaviour
 {
-    [SerializeField] private WiseMonkeyPuzzle wiseMonkeyPuzzle = null;
     [SerializeField] private SpriteRenderer[] monkeyClues = null;
+    [SerializeField] private WiseMonkeys wiseMonkeys = null;
 
+    // List of sprites used for the puzzle
+    public List<Sprite> monkeySprites;
     public List<Sprite> monkeyOrder;
 
-    /// <summary>
-    /// 
-    /// </summary>
+    public bool puzzleCompleted;
+
+    private void Start()
+    {
+        puzzleCompleted = false;
+
+        SetCorrectOrder();
+    }
+
     public void SetCorrectOrder()
     {
-        List<Sprite> tempSprites = new List<Sprite>(wiseMonkeyPuzzle.monkeySprites);
+        List<Sprite> tempSprites = new List<Sprite>(monkeySprites);
         monkeyOrder = new List<Sprite>();
 
-        for (int idx = 0; idx < wiseMonkeyPuzzle.monkeySprites.Count; idx++)
+        for (int idx = 0; idx < monkeySprites.Count; idx++)
         {
             int monkeyIdx = Random.Range(0, tempSprites.Count);
             monkeyOrder.Add(tempSprites[monkeyIdx]);

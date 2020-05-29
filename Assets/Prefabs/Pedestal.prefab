@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2862086543260032648}
   - component: {fileID: 3788000890186217420}
   - component: {fileID: 7027028800145000942}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Pedestal
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1202181017
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1258725773840671922, guid: 06cc031c76efb1449a8be84cabce6e78,
     type: 3}
@@ -98,18 +98,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03}
+  m_Offset: {x: 0, y: -0.055}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.59375}
+    oldSize: {x: 1, y: 1.1875}
     newSize: {x: 0.53125, y: 0.96875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44, y: 0.54}
+  m_Size: {x: 0.75, y: 0.95}
   m_EdgeRadius: 0
 --- !u!61 &3788000890186217420
 BoxCollider2D:
@@ -124,18 +124,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03}
+  m_Offset: {x: 0, y: -0.055}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.59375}
+    oldSize: {x: 1, y: 1.1875}
     newSize: {x: 0.53125, y: 0.96875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.49, y: 0.59}
+  m_Size: {x: 0.85, y: 1.05}
   m_EdgeRadius: 0
 --- !u!114 &7027028800145000942
 MonoBehaviour:
