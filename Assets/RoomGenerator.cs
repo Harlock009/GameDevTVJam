@@ -7,12 +7,34 @@ public class RoomGenerator : MonoBehaviour
 {
     Vector2 levelSize = new Vector2(10, 10);
 
-    Room[,] rooms;
+    [SerializeField] private Room[,] rooms;
     List<Vector2> TakenPos = new List<Vector2>();
 
-    int GridSizeX, GridSizeY, numRooms = 20;
+    int GridSizeX, GridSizeY, numRooms = 15;
 
     public GameObject roomObj;
+    public GameObject room_B;
+    public GameObject room_BR;
+    public GameObject room_L;
+    public GameObject room_LB;
+    public GameObject room_LBR;
+    public GameObject room_LR;
+    public GameObject room_LT;
+    public GameObject room_LTB;
+    public GameObject room_LTR;
+    public GameObject room_R;
+    public GameObject room_RTB;
+    public GameObject room_StartRoom;
+    public GameObject room_T;
+    public GameObject room_TB;
+    public GameObject room_TBR;
+    public GameObject room_TLB;
+    public GameObject room_TLR;
+    public GameObject room_TR;
+    public GameObject stairExit;
+
+    public Puzzle[] puzzles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +49,10 @@ public class RoomGenerator : MonoBehaviour
         CreateRooms();
         SetRoomDoors();
         DrawMap();
+        DrawStairExit();
+        DrawPuzzles();
     }
+
     void SetRoomDoors()
     {
         for(int x = 0;x < ((GridSizeX * 2)); x++)
@@ -102,18 +127,13 @@ public class RoomGenerator : MonoBehaviour
                     iteration++;
                 }
                 while (NumNeighbors(checkpos, TakenPos) > 1 && iteration < 100);
-             
-
             }
             //Finalize room positions
             rooms[(int)checkpos.x + GridSizeX, (int)checkpos.y + GridSizeY] = new Room(checkpos, 0);
             TakenPos.Insert(0, checkpos);
         }
-
-
-
-
     }
+
     Vector2 NewRoomPosition()
     {
         int x = 0, y = 0;
@@ -152,6 +172,7 @@ public class RoomGenerator : MonoBehaviour
 
         return chkPos;
     }
+
     int NumNeighbors(Vector2 chk, List<Vector2> taken)
     {
         int ret = 0;
@@ -224,26 +245,163 @@ public class RoomGenerator : MonoBehaviour
 
     void DrawMap()
     {
+        //bool mapHasExit = false;
         foreach (Room room in rooms)
         {
             if (room == null)
             {
                 continue;
             }
+            //int hasExit = UnityEngine.Random.Range(0, 2);
             Vector2 drawpos = room.roomPos;
-            drawpos.x *= 10;
-            drawpos.y *= 10;
-            RoomSpriteSelector mapper = UnityEngine.Object.Instantiate(roomObj, drawpos, Quaternion.identity).GetComponent<RoomSpriteSelector>();
-            mapper.type = room.roomType;
-            mapper.top = room._OpenN;
-            mapper.bottom = room.OpenS;
-            mapper.right = room._OpenE;
-            mapper.left = room._OpenW;
+            drawpos.x *= 16;
+            drawpos.y *= 16;
+            GameObject roomToDraw = CreateRoomObject(room);
+            Instantiate(roomToDraw, drawpos, Quaternion.identity);
+            //if (hasExit == 1 && !mapHasExit)
+            //{
+            //    mapHasExit = true;
+            //    Vector2 stairsPos = drawpos;
+            //    Instantiate(stairExit, stairsPos, Quaternion.identity);
+            //}
+            //RoomSpriteSelector mapper = UnityEngine.Object.Instantiate(roomObj, drawpos, Quaternion.identity).GetComponent<RoomSpriteSelector>();
+            //mapper.type = room.roomType;
+            //mapper.top = room._OpenN;
+            //mapper.bottom = room.OpenS;
+            //mapper.right = room._OpenE;
+            //mapper.left = room._OpenW;
 
         }
     }
-    // Update is called once per frame
-    void Update()
+
+    private GameObject CreateRoomObject(Room room)
+    {
+        if (room._OpenN)
+        {
+            if (room.OpenS)
+            {
+                if (room._OpenE)
+                {
+                    if (room._OpenW)
+                    {
+                        return room_StartRoom;
+                    }
+                    else
+                    {
+                        return room_TBR;
+                    }
+                }
+                else if (room._OpenW)
+                {
+                    return room_TLB;
+                }
+                else
+                {
+                    return room_TB;
+                }
+            }
+            else
+            {
+                if (room._OpenE)
+                {
+                    if (room._OpenW)
+                    {
+                        return room_TLR;
+                    }
+                    else
+                    {
+                        return room_TR;
+                    }
+                }
+                else if (room._OpenW)
+                {
+                    return room_LT;
+                }
+                else
+                {
+                    return room_T;
+                }
+            }
+        }
+        if (room.OpenS)
+        {
+            if (room._OpenE)
+            {
+                if (room._OpenW)
+                {
+                    return room_LBR;
+                }
+                else
+                {
+                    return room_BR;
+                }
+            }
+            else if (room._OpenW)
+            {
+                return room_LB;
+            }
+            else
+            {
+                return room_B;
+            }
+        }
+        if (room._OpenE)
+        {
+            if (room._OpenW)
+            {
+                return room_LR;
+            }
+            else
+            {
+                return room_R;
+            }
+        }
+        else
+        {
+            return room_L;
+        }
+    }
+    
+    private void DrawStairExit()
+    {
+        List<Room> availableRooms = new List<Room>();
+
+        foreach (Room room in rooms)
+        {
+            if (room != null)
+            {
+                availableRooms.Add(room);
+            }
+        }
+
+        int randomRoomX = UnityEngine.Random.Range(0, availableRooms.Count);
+
+        Vector2 stairPos = availableRooms[randomRoomX].roomPos;
+        stairPos.x *= 16;
+        stairPos.y *= 16;
+        Instantiate(stairExit, stairPos, Quaternion.identity);
+
+        int randomPuzzleRoom1 = UnityEngine.Random.Range(0, availableRooms.Count);
+
+        Vector2 puzzleRoomPos1 = availableRooms[randomPuzzleRoom1].roomPos;
+        puzzleRoomPos1.x *= 16;
+        puzzleRoomPos1.y *= 16;
+
+        int randomPuzzle = UnityEngine.Random.Range(0, puzzles.Length);
+        if (puzzles[randomPuzzle].puzzleObject1 != null)
+            Instantiate(puzzles[randomPuzzle].puzzleObject1, puzzleRoomPos1, Quaternion.identity);
+
+        int randomPuzzleRoom2 = UnityEngine.Random.Range(0, availableRooms.Count);
+
+        Vector2 puzzleRoomPos2 = availableRooms[randomPuzzleRoom2].roomPos;
+        puzzleRoomPos2.x *= 16;
+        puzzleRoomPos2.y *= 16;
+
+        if (puzzles[randomPuzzle].puzzleObject2 != null)
+            Instantiate(puzzles[randomPuzzle].puzzleObject2, puzzleRoomPos2, Quaternion.identity);
+    }
+
+    private void DrawPuzzles()
     {
         
     }

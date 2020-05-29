@@ -44,3 +44,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomObj: {fileID: 2402573824567737346, guid: 5cf22bd26d39ab7469aba2defeb233f8, type: 3}
+  room_B: {fileID: 7125222108423711881, guid: 84e01383d1e590a4bb2097dde661a9fa, type: 3}
+  room_BR: {fileID: 4545958290491911949, guid: f00f253930154a54ca643024a267c734, type: 3}
+  room_L: {fileID: 3533901942310460313, guid: 687bb2210abb89d45bc88e2fbceeca43, type: 3}
+  room_LB: {fileID: 4620686767878186281, guid: 41ab96816828bc5448f78a30457f0839, type: 3}
+  room_LBR: {fileID: 1010777213826873269, guid: 0f41faaac79790e459cd421c4a43e1e1,
+    type: 3}
+  room_LR: {fileID: 6536372943306979427, guid: d36f1148538cbc044bd0d0713c64cc5a, type: 3}
+  room_LT: {fileID: 6669291852612096684, guid: 897b27f4d21ad3447b2b000434a447a8, type: 3}
+  room_LTB: {fileID: 7091925922142592545, guid: 9f406be1f5183db4895f573cf2b4fae1,
+    type: 3}
+  room_LTR: {fileID: 6612637861371828789, guid: 3d372b7ec1a06064a9f8fb88c6957190,
+    type: 3}
+  room_R: {fileID: 3137911438785336521, guid: f6f690e303b073244a70f757e6500f33, type: 3}
+  room_RTB: {fileID: 8450831310408054905, guid: 94a3fee987db4904782ad624d2a185fc,
+    type: 3}
+  room_StartRoom: {fileID: 5179191732071085588, guid: 8f3fcaae5494c13418df5bdceb9d869d,
+    type: 3}
+  room_T: {fileID: 9019576843277577602, guid: 40efe0debef5ce4468fe80fd1b4db2dc, type: 3}
+  room_TB: {fileID: 7969665375413157376, guid: 0e2e9bd05542876478d9ae00828e7345, type: 3}
+  room_TBR: {fileID: 9037352014091667704, guid: 4c28a7643ad08854292a9c62802b6a49,
+    type: 3}
+  room_TLB: {fileID: 3418053988177511627, guid: be14119537f369841897323db89e4d4a,
+    type: 3}
+  room_TLR: {fileID: 2061122395451753858, guid: 986346b1d2562dd4aba55380005eac94,
+    type: 3}
+  room_TR: {fileID: 374640380887245163, guid: 5ff090e3f378a804d8deb59eeb73934b, type: 3}
+  stairExit: {fileID: 1456342379178229350, guid: 10c4d25c00671d94ea96be32bcda2bd5,
+    type: 3}
