@@ -10,7 +10,7 @@ public class RoomGenerator : MonoBehaviour
     [SerializeField] private Room[,] rooms;
     List<Vector2> TakenPos = new List<Vector2>();
 
-    int GridSizeX, GridSizeY, numRooms = 20;
+    int GridSizeX, GridSizeY, numRooms = 15;
 
     public GameObject roomObj;
     public GameObject room_B;
@@ -33,6 +33,8 @@ public class RoomGenerator : MonoBehaviour
     public GameObject room_TR;
     public GameObject stairExit;
 
+    public Puzzle[] puzzles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,7 @@ public class RoomGenerator : MonoBehaviour
         SetRoomDoors();
         DrawMap();
         DrawStairExit();
+        DrawPuzzles();
     }
 
     void SetRoomDoors()
@@ -251,8 +254,8 @@ public class RoomGenerator : MonoBehaviour
             }
             //int hasExit = UnityEngine.Random.Range(0, 2);
             Vector2 drawpos = room.roomPos;
-            drawpos.x *= 10;
-            drawpos.y *= 10;
+            drawpos.x *= 16;
+            drawpos.y *= 16;
             GameObject roomToDraw = CreateRoomObject(room);
             Instantiate(roomToDraw, drawpos, Quaternion.identity);
             //if (hasExit == 1 && !mapHasExit)
@@ -372,11 +375,34 @@ public class RoomGenerator : MonoBehaviour
         }
 
         int randomRoomX = UnityEngine.Random.Range(0, availableRooms.Count);
-        //int randomRoomY = UnityEngine.Random.Range(0, GridSizeY);
 
         Vector2 stairPos = availableRooms[randomRoomX].roomPos;
-        stairPos.x *= 10;
-        stairPos.y *= 10;
+        stairPos.x *= 16;
+        stairPos.y *= 16;
         Instantiate(stairExit, stairPos, Quaternion.identity);
+
+        int randomPuzzleRoom1 = UnityEngine.Random.Range(0, availableRooms.Count);
+
+        Vector2 puzzleRoomPos1 = availableRooms[randomPuzzleRoom1].roomPos;
+        puzzleRoomPos1.x *= 16;
+        puzzleRoomPos1.y *= 16;
+
+        int randomPuzzle = UnityEngine.Random.Range(0, puzzles.Length);
+        if (puzzles[randomPuzzle].puzzleObject1 != null)
+            Instantiate(puzzles[randomPuzzle].puzzleObject1, puzzleRoomPos1, Quaternion.identity);
+
+        int randomPuzzleRoom2 = UnityEngine.Random.Range(0, availableRooms.Count);
+
+        Vector2 puzzleRoomPos2 = availableRooms[randomPuzzleRoom2].roomPos;
+        puzzleRoomPos2.x *= 16;
+        puzzleRoomPos2.y *= 16;
+
+        if (puzzles[randomPuzzle].puzzleObject2 != null)
+            Instantiate(puzzles[randomPuzzle].puzzleObject2, puzzleRoomPos2, Quaternion.identity);
+    }
+
+    private void DrawPuzzles()
+    {
+        
     }
 }

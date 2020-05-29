@@ -1,40 +1,45 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WiseMonkeys : MonoBehaviour
 {
-    [SerializeField] private WiseMonkeyPuzzle wiseMonkeyPuzzle = null;
+    [SerializeField] private WiseMonkeysClue wiseMonkeyClue = null;
     [SerializeField] private Monkey[] monkeys = null;
 
-    /// <summary>
-    /// 
-    /// </summary>
+    public static event Action OnWiseMonkeyCompleted;
+
+    private void Start()
+    {
+        wiseMonkeyClue = FindObjectOfType<WiseMonkeysClue>();
+        RandomizeMonkeys();
+    }
+
     public void RandomizeMonkeys()
     {
-        if (wiseMonkeyPuzzle == null) return;
+        if (wiseMonkeyClue == null) return;
 
-        List<Sprite> tempSprites = new List<Sprite>(wiseMonkeyPuzzle.monkeySprites);
+        List<Sprite> tempSprites = new List<Sprite>(wiseMonkeyClue.monkeySprites);
 
-        for (int idx = 0; idx < wiseMonkeyPuzzle.monkeySprites.Count; idx++)
+        for (int idx = 0; idx < wiseMonkeyClue.monkeySprites.Count; idx++)
         {
-            int monkeyIdx = Random.Range(0, tempSprites.Count);
+            int monkeyIdx = UnityEngine.Random.Range(0, tempSprites.Count);
             monkeys[idx].monkeySprite.sprite = tempSprites[monkeyIdx];
             tempSprites.RemoveAt(monkeyIdx);
         }
 
-        for (int i = 0; i < wiseMonkeyPuzzle.monkeySprites.Count; i++)
+        for (int i = 0; i < wiseMonkeyClue.monkeySprites.Count; i++)
         {
             for (int j = 0; j < monkeys.Length; j++)
             {
-                if (wiseMonkeyPuzzle.monkeySprites[i] == monkeys[j].monkeySprite.sprite)
+                if (wiseMonkeyClue.monkeySprites[i] == monkeys[j].monkeySprite.sprite)
                     monkeys[j].CurrentMonkey = i;
             }
         }
 
         // To guarantee that the monkeys do not start in the correct positon,
         // swap the first monkey with the second if it matches the correct monkey
-        if (monkeys[0].monkeySprite.sprite == wiseMonkeyPuzzle.wiseMonkeyClue.monkeyOrder[0])
+        if (monkeys[0].monkeySprite.sprite == wiseMonkeyClue.monkeyOrder[0])
         {
             Sprite temp = monkeys[0].monkeySprite.sprite;
             int tempCurrentMonkey = monkeys[0].CurrentMonkey;
@@ -46,16 +51,13 @@ public class WiseMonkeys : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public void CheckOrder()
     {
         bool match = true;
 
         for (int idx = 0; idx < monkeys.Length; idx++)
         {
-            if (monkeys[idx].monkeySprite.sprite != wiseMonkeyPuzzle.wiseMonkeyClue.monkeyOrder[idx])
+            if (monkeys[idx].monkeySprite.sprite != wiseMonkeyClue.monkeyOrder[idx])
             {
                 match = false;
                 break;
@@ -64,7 +66,8 @@ public class WiseMonkeys : MonoBehaviour
 
         if (match)
         {
-            wiseMonkeyPuzzle.puzzleCompleted = true;
+            wiseMonkeyClue.puzzleCompleted = true;
+            OnWiseMonkeyCompleted?.Invoke();
         }
     }
 }

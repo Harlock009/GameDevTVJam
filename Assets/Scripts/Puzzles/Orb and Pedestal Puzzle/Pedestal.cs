@@ -1,18 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Pedestal : Interactable
 {
     [SerializeField] private Sprite pedestalWithOrb;
-    [SerializeField] private AudioClip door;
     private bool hasOrb;
+
+    public static event Action OnPedestalCompleted;
 
     public override void Interact(Player player)
     {
-        //TODO:
-        //The drop SFX plays
-        //Door opens
         if (!hasOrb)
         {
             for (int itemIdx = 0; itemIdx < player.items.Count; itemIdx++)
@@ -20,10 +19,9 @@ public class Pedestal : Interactable
                 if (player.items[itemIdx].itemUI.tag == "Orb")
                 {
                     GetComponent<SpriteRenderer>().sprite = pedestalWithOrb;
-                    //TODO: Door opens
-                    AudioSource.PlayClipAtPoint(door, Camera.main.transform.position, 0.5f);
                     hasOrb = true;
                     player.DropItem(itemIdx);
+                    OnPedestalCompleted?.Invoke();
                     break;
                 }
             }
