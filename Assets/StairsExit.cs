@@ -20,7 +20,8 @@ public class StairsExit : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            Destroy(child.gameObject);
+            if (child != null)
+                Destroy(child.gameObject);
         }
 
         stairsCollider.enabled = true;
@@ -38,5 +39,11 @@ public class StairsExit : MonoBehaviour
         Destroy(player);
         yield return new WaitForSeconds(1f);
         FindObjectOfType<SceneLoader>().LoadNextScene();
+    }
+
+    private void OnDestroy()
+    {
+        Pedestal.OnPedestalCompleted -= OnPuzzleCompleted;
+        WiseMonkeys.OnWiseMonkeyCompleted -= OnPuzzleCompleted;
     }
 }

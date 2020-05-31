@@ -5,6 +5,18 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] Animator transition;
+
+    private void Start()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        if (sceneName.ToUpper() == "WINGAME" || sceneName.ToUpper() == "GAMEOVER")
+        {
+            if (FindObjectOfType<GameSession>() != null)
+            Destroy(FindObjectOfType<GameSession>().gameObject);
+        }
+    }
+
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -13,7 +25,8 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneTransition(int sceneIndex)
     {
-        transition.SetTrigger("Close");
+        if (transition != null)
+            transition.SetTrigger("Close");
 
         yield return new WaitForSeconds(2f);
 
@@ -29,6 +42,10 @@ public class SceneLoader : MonoBehaviour
     }
     public void QuitScene()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 }

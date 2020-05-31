@@ -72,3 +72,4 @@ MonoBehaviour:
   room_TR: {fileID: 374640380887245163, guid: 5ff090e3f378a804d8deb59eeb73934b, type: 3}
   stairExit: {fileID: 1456342379178229350, guid: 10c4d25c00671d94ea96be32bcda2bd5,
     type: 3}
+  puzzles: {fileID: 11400000, guid: e6c388e419f49e94c99839c52a420083, type: 2}

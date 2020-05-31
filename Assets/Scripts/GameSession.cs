@@ -6,33 +6,57 @@ public class GameSession : MonoBehaviour
 {
     [SerializeField] float timeInMinutes = 1f;
     [SerializeField] TextMeshProUGUI timerText = null;
-    // Start is called before the first frame update
 
     SceneLoader sceneLoader;
+
+    private float minutes;
+    private float seconds;
+    private float milliseconds;
+
+    private void Awake()
+    {
+        int numGameSessions = FindObjectsOfType<GameSession>().Length;
+        if (numGameSessions > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    // Start is called before the first frame update
     void Start()
     {
         timeInMinutes *= 60f;
-        timerText.text = timeInMinutes.ToString();
+        CalculateTime();
+        timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
         sceneLoader = FindObjectOfType<SceneLoader>();
+    }
+
+    private void CalculateTime()
+    {
+        minutes = Mathf.Floor(timeInMinutes / 60);
+        seconds = Mathf.FloorToInt(timeInMinutes % 60);
+        milliseconds = Mathf.FloorToInt((timeInMinutes * 100) % 100);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Invoke("Timer", 2f);
+        Invoke("Timer", 1f);
     }
 
     private void Timer()
     {
         timeInMinutes -= Time.deltaTime;
 
-        float minutes = Mathf.Floor(timeInMinutes / 60);
-        float seconds = Mathf.FloorToInt(timeInMinutes % 60);
-        float milliseconds = Mathf.FloorToInt((timeInMinutes * 100) % 100);
+        CalculateTime();
 
         if(minutes == 0 && seconds == 0 && milliseconds == 0)
         {
-            Invoke("LoadNextScenes",0f);
+            Invoke("LoadGameOverScene",0f);
         }
         else if(minutes < 0 && seconds < 0)
         {
@@ -46,8 +70,15 @@ public class GameSession : MonoBehaviour
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");// + ":" + milliseconds.ToString("00");
     }
 
-    private void LoadNextScenes()
+    public void LoadNextScenes()
     {
+        
         sceneLoader.LoadNextScene();
+        
+    }
+
+    public void LoadGameOverScene()
+    {
+        sceneLoader.LoadGameOverScene();
     }
 }

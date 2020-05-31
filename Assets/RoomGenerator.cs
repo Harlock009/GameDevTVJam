@@ -8,6 +8,7 @@ public class RoomGenerator : MonoBehaviour
     Vector2 levelSize = new Vector2(10, 10);
 
     [SerializeField] private Room[,] rooms;
+    private List<Room> availableRooms;
     List<Vector2> TakenPos = new List<Vector2>();
 
     int GridSizeX, GridSizeY, numRooms = 15;
@@ -33,7 +34,7 @@ public class RoomGenerator : MonoBehaviour
     public GameObject room_TR;
     public GameObject stairExit;
 
-    public Puzzle[] puzzles;
+    public Puzzle puzzles;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,7 @@ public class RoomGenerator : MonoBehaviour
         CreateRooms();
         SetRoomDoors();
         DrawMap();
+        GetAvailableRooms();
         DrawStairExit();
         DrawPuzzles();
     }
@@ -361,10 +363,10 @@ public class RoomGenerator : MonoBehaviour
             return room_L;
         }
     }
-    
-    private void DrawStairExit()
+
+    private void GetAvailableRooms()
     {
-        List<Room> availableRooms = new List<Room>();
+        availableRooms = new List<Room>();
 
         foreach (Room room in rooms)
         {
@@ -373,7 +375,10 @@ public class RoomGenerator : MonoBehaviour
                 availableRooms.Add(room);
             }
         }
-
+    }
+    
+    private void DrawStairExit()
+    {
         int randomRoomX = UnityEngine.Random.Range(0, availableRooms.Count);
 
         Vector2 stairPos = availableRooms[randomRoomX].roomPos;
@@ -381,15 +386,21 @@ public class RoomGenerator : MonoBehaviour
         stairPos.y *= 16;
         Instantiate(stairExit, stairPos, Quaternion.identity);
 
+        availableRooms.RemoveAt(randomRoomX);
+    }
+
+    private void DrawPuzzles()
+    {
         int randomPuzzleRoom1 = UnityEngine.Random.Range(0, availableRooms.Count);
 
         Vector2 puzzleRoomPos1 = availableRooms[randomPuzzleRoom1].roomPos;
         puzzleRoomPos1.x *= 16;
         puzzleRoomPos1.y *= 16;
 
-        int randomPuzzle = UnityEngine.Random.Range(0, puzzles.Length);
-        if (puzzles[randomPuzzle].puzzleObject1 != null)
-            Instantiate(puzzles[randomPuzzle].puzzleObject1, puzzleRoomPos1, Quaternion.identity);
+        if (puzzles.puzzleObject1 != null)
+            Instantiate(puzzles.puzzleObject1, puzzleRoomPos1, Quaternion.identity);
+
+        availableRooms.RemoveAt(randomPuzzleRoom1);
 
         int randomPuzzleRoom2 = UnityEngine.Random.Range(0, availableRooms.Count);
 
@@ -397,12 +408,9 @@ public class RoomGenerator : MonoBehaviour
         puzzleRoomPos2.x *= 16;
         puzzleRoomPos2.y *= 16;
 
-        if (puzzles[randomPuzzle].puzzleObject2 != null)
-            Instantiate(puzzles[randomPuzzle].puzzleObject2, puzzleRoomPos2, Quaternion.identity);
-    }
+        if (puzzles.puzzleObject2 != null)
+            Instantiate(puzzles.puzzleObject2, puzzleRoomPos2, Quaternion.identity);
 
-    private void DrawPuzzles()
-    {
-        
+        availableRooms.RemoveAt(randomPuzzleRoom2);
     }
 }

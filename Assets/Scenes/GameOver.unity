@@ -278,7 +278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -231, y: -234}
+  m_AnchoredPosition: {x: 250, y: -234}
   m_SizeDelta: {x: 170, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689596583
@@ -438,7 +438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &794241036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -956,6 +956,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7433516166717932457, guid: 4db088495f525e847a6153ef91c49afe,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1878339962288ab4f94d49c02b256c73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4db088495f525e847a6153ef91c49afe, type: 3}
 --- !u!1001 &1536835686
@@ -1023,7 +1028,7 @@ PrefabInstance:
     - target: {fileID: 2687918332113103618, guid: 6a6de38c678718743955d9a06eb19f9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 407
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2687918332113103618, guid: 6a6de38c678718743955d9a06eb19f9b,
         type: 3}
