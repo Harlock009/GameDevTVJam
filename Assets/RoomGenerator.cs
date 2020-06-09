@@ -11,7 +11,7 @@ public class RoomGenerator : MonoBehaviour
     private List<Room> availableRooms;
     List<Vector2> TakenPos = new List<Vector2>();
 
-    int GridSizeX, GridSizeY, numRooms = 15;
+    int GridSizeX, GridSizeY, numRooms = 9;
 
     public GameObject roomObj;
     public GameObject room_B;

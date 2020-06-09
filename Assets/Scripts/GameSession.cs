@@ -45,7 +45,12 @@ public class GameSession : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invoke("Timer", 1f);
+        if (Input.GetKeyDown(KeyCode.Alpha1) && Debug.isDebugBuild)
+        {
+            timeInMinutes -= 30.0f;
+        }
+
+        Timer();
     }
 
     private void Timer()
@@ -54,9 +59,9 @@ public class GameSession : MonoBehaviour
 
         CalculateTime();
 
-        if(minutes == 0 && seconds == 0 && milliseconds == 0)
+        if(minutes <= 0 && seconds <= 0)
         {
-            Invoke("LoadGameOverScene",0f);
+            LoadGameOverScene();
         }
         else if(minutes < 0 && seconds < 0)
         {
@@ -67,7 +72,7 @@ public class GameSession : MonoBehaviour
             seconds = 0;
         }
 
-        timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");// + ":" + milliseconds.ToString("00");
+        timerText.text = minutes.ToString("0") + ":" + seconds.ToString("00");// + ":" + milliseconds.ToString("00");
     }
 
     public void LoadNextScenes()

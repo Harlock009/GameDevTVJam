@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593df31eaecccfb4ca432701888ad1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeInMinutes: 5
+  timeInMinutes: 4
   timerText: {fileID: 1462508390484692436}
 --- !u!82 &4626658616215250153
 AudioSource:
@@ -599,7 +599,7 @@ PrefabInstance:
     - target: {fileID: 2687918332113103645, guid: f1cf99907507f814bbdb9a53a7e25f44,
         type: 3}
       propertyPath: m_textAlignment
-      value: 514
+      value: 513
       objectReference: {fileID: 0}
     - target: {fileID: 2687918332113103645, guid: f1cf99907507f814bbdb9a53a7e25f44,
         type: 3}
@@ -711,12 +711,12 @@ PrefabInstance:
     - target: {fileID: 2687918332113103645, guid: f1cf99907507f814bbdb9a53a7e25f44,
         type: 3}
       propertyPath: m_margin.x
-      value: -20.576578
+      value: -0.000016563261
       objectReference: {fileID: 0}
     - target: {fileID: 2687918332113103645, guid: f1cf99907507f814bbdb9a53a7e25f44,
         type: 3}
       propertyPath: m_margin.z
-      value: 11.689522
+      value: 0.0047785174
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1cf99907507f814bbdb9a53a7e25f44, type: 3}
